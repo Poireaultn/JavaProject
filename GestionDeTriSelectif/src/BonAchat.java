@@ -15,30 +15,38 @@ public class BonAchat {
 		this.DateExpiration = dateExpiration;
 	}
 	
-	// Setters / Getters
+	// Getters
 	public Integer getIDBonAchat() {
 		return IDBonAchat;
 	}
-	public void setIDBonAchat(Integer iDBonAchat) {
-		IDBonAchat = iDBonAchat;
-	}
+
 	public Integer getPrix() {
 		return Prix;
 	}
-	public void setPrix(Integer prix) {
-		Prix = prix;
-	}
+	
 	public String getCategorieProduit() {
 		return CategorieProduit;
 	}
-	public void setCategorieProduit(String categorieProduit) {
-		CategorieProduit = categorieProduit;
-	}
+
 	public Date getDateExpiration() {
 		return DateExpiration;
 	}
+
+	// Setters 
+	public void setIDBonAchat(Integer iDBonAchat) {
+		this.IDBonAchat = iDBonAchat;
+	}
+	
+	public void setPrix(Integer prix) {
+		this.Prix = prix;
+	}
+	
+	public void setCategorieProduit(String categorieProduit) {
+		this.CategorieProduit = categorieProduit;
+	}
+	
 	public void setDateExpiration(Date dateExpiration) {
-		DateExpiration = dateExpiration;
+		this.DateExpiration = dateExpiration;
 	}	
 	
 }

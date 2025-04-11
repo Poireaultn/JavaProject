@@ -21,65 +21,61 @@ public class Menage {
 		mesCorbeilles = new ArrayList<Corbeille>();
 	}
 	
-	// Setters / Getters
+	// Getters
 	public Integer getIDMenage() {
 		return IDMenage;
-	}
-
-	public void setIDMenage(Integer iDMenage) {
-		IDMenage = iDMenage;
 	}
 
 	public String getLogin() {
 		return Login;
 	}
 
-	public void setLogin(String login) {
-		Login = login;
-	}
-
 	public String getPassword() {
 		return Password;
-	}
-
-	public void setPassword(String password) {
-		Password = password;
 	}
 
 	public Integer getPointFidelite() {
 		return PointFidelite;
 	}
 
-	public void setPointFidelite(Integer pointFidelite) {
-		PointFidelite = pointFidelite;
-	}
-
 	public ArrayList<BonAchat> getMesBonAchats() {
 		return mesBonAchats;
-	}
-
-	public void setMesBonAchats(ArrayList<BonAchat> mesBonAchats) {
-		this.mesBonAchats = mesBonAchats;
 	}
 
 	public ArrayList<Deposer> getMesDepots() {
 		return mesDepots;
 	}
 
-	public void setMesDepots(ArrayList<Deposer> mesDepots) {
-		this.mesDepots = mesDepots;
-	}
-
 	public ArrayList<Corbeille> getMesCorbeilles() {
 		return mesCorbeilles;
 	}
 
+	// Setters
+	public void setIDMenage(Integer iDMenage) {
+		this.IDMenage = iDMenage;
+	}
+
+	public void setLogin(String login) {
+		this.Login = login;
+	}	
+
+	public void setPassword(String password) {
+		this.Password = password;
+	}	
+
+	public void setPointFidelite(Integer pointFidelite) {
+		this.PointFidelite = pointFidelite;
+	}	
+
+	public void setMesBonAchats(ArrayList<BonAchat> mesBonAchats) {
+		this.mesBonAchats = mesBonAchats;
+	}	
+
+	public void setMesDepots(ArrayList<Deposer> mesDepots) {
+		this.mesDepots = mesDepots;
+	}	
+
 	public void setMesCorbeilles(ArrayList<Corbeille> mesCorbeilles) {
 		this.mesCorbeilles = mesCorbeilles;
-	}
-	
-	
-	
-	
-	
+	}	
 }

@@ -21,14 +21,13 @@ public class MenuPrincipal {
                 System.out.println("9. Jeter directement un déchet dans une poubelle");
                 System.out.println("11. Acheter un bon d'achat 🛍️");
 
-                // ✅ Options réservées aux employés
                 if (menage.getRole().equalsIgnoreCase("employé")) {
                     System.out.println("10. Consulter l'historique des dépôts");
                 }
 
             } else {
                 System.out.println("1. Découverte libre (Visiteur)");
-                System.out.println("3. Se connecter"); // 🧹 Suppression de "S'inscrire"
+                System.out.println("3. Se connecter"); 
             }
 
             System.out.println("0. Quitter");

@@ -6,7 +6,9 @@ JavaProject est une application console développée en Java, permettant la gest
 
 Cloner le projet avec la commande suivante :
 
-```bash git clone git@github.com:Poireaultn/JavaProject.git ```
+```bash
+git clone git@github.com:Poireaultn/JavaProject.git
+```
 
 Importer ensuite le projet dans Eclipse :
 
@@ -24,11 +26,17 @@ Vérifier que les dossiers sont correctement configurés :
 
 Importer le dump SQL de la base de données :
 
-```bash mysql -u root -p ```
+```bash 
+mysql -u root -p
+```
 
 Puis dans le terminal MySQL :
 
-``` sql CREATE DATABASE tri_selectif; USE tri_selectif; SOURCE /chemin/vers/le/projet/JavaProject/sql/tri_selectif.sql; ```
+``` sql 
+CREATE DATABASE tri_selectif;
+USE tri_selectif;
+SOURCE /chemin/vers/le/projet/JavaProject/sql/tri_selectif.sql;
+```
 
 Remplacez `/chemin/vers/le/projet/` par le chemin réel vers votre projet.
 

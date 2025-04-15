@@ -4,9 +4,8 @@ public class Poubelle {
     private String quartier;
     private String typePoubelle;
     private int capacite;
-    private double poidsActuel; // ✅ double pour la précision
+    private double poidsActuel;
 
-    // ✅ Constructeur complet avec poids actuel en double
     public Poubelle(int identifiantPoubelle, String ville, String quartier, String typePoubelle, int capacite, double poidsActuel) {
         this.identifiantPoubelle = identifiantPoubelle;
         this.ville = ville;
@@ -16,7 +15,6 @@ public class Poubelle {
         this.poidsActuel = poidsActuel;
     }
 
-    // ✅ Getters
     public int getIdentifiantPoubelle() {
         return identifiantPoubelle;
     }
@@ -41,7 +39,6 @@ public class Poubelle {
         return poidsActuel;
     }
 
-    // ✅ Setters
     public void setCapacite(int capacite) {
         this.capacite = capacite;
     }

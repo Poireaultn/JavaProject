@@ -7,7 +7,6 @@ import java.util.List;
 
 public class ServiceGestionDechet {
 
-    // ✅ Afficher les types de déchets disponibles
     public static void afficherTypesDechets() {
         Connection connexion = ConnexionBaseDeDonnees.obtenirConnexion();
         if (connexion != null) {
@@ -29,7 +28,6 @@ public class ServiceGestionDechet {
         }
     }
 
-    // ✅ Récupérer le type de déchet par ID
     public static String recupererTypeDechetParId(int id) {
         Connection connexion = ConnexionBaseDeDonnees.obtenirConnexion();
         if (connexion != null) {
@@ -50,7 +48,6 @@ public class ServiceGestionDechet {
         return null;
     }
 
-    // ✅ Ajouter un déchet dans la corbeille
     public static void ajouterDechetDansCorbeille(Corbeille corbeille, String typeDechet, double poids) {
         Connection connexion = ConnexionBaseDeDonnees.obtenirConnexion();
         if (connexion != null) {
@@ -74,7 +71,6 @@ public class ServiceGestionDechet {
         }
     }
 
-    // ✅ Consulter les déchets dans la corbeille
     public static void consulterDechetsCorbeille(Corbeille corbeille) {
         Connection connexion = ConnexionBaseDeDonnees.obtenirConnexion();
         if (connexion != null) {
@@ -106,7 +102,6 @@ public class ServiceGestionDechet {
         }
     }
 
-    // ✅ Récupérer tous les déchets d'une corbeille
     public static List<Dechet> recupererDechetsParCorbeille(int idCorbeille) {
         List<Dechet> dechets = new ArrayList<>();
         Connection connexion = ConnexionBaseDeDonnees.obtenirConnexion();
@@ -134,7 +129,6 @@ public class ServiceGestionDechet {
         return dechets;
     }
 
-    // ✅ Supprimer un déchet
     public static void supprimerDechet(Dechet dechet) {
         Connection connexion = ConnexionBaseDeDonnees.obtenirConnexion();
         if (connexion != null) {
@@ -152,12 +146,10 @@ public class ServiceGestionDechet {
         }
     }
 
-    // ✅ Vérifier compatibilité des types de déchet
     public static boolean verifierTypeDeDechet(String typeDechet, String typePoubelle) {
         return typeDechet.equalsIgnoreCase(typePoubelle);
     }
 
-    // ✅ Mise à jour poubelle après dépôt
     public static void mettreAJourPoubelle(Poubelle poubelle, double quantiteDejetee) {
         Connection connexion = ConnexionBaseDeDonnees.obtenirConnexion();
         if (connexion != null) {
@@ -177,7 +169,6 @@ public class ServiceGestionDechet {
         }
     }
 
-    // ✅ Mettre à jour un déchet dans la base
     public static void mettreAJourDechet(Dechet dechet) {
         Connection connexion = ConnexionBaseDeDonnees.obtenirConnexion();
         if (connexion != null) {
@@ -194,7 +185,6 @@ public class ServiceGestionDechet {
         }
     }
 
-    // ✅ Enregistrer l'historique de dépôt
     public static void enregistrerHistoriqueDepot(int idPoubelle, int idUtilisateur, double poidsDepose) {
         Connection connexion = ConnexionBaseDeDonnees.obtenirConnexion();
         if (connexion != null) {
@@ -212,7 +202,6 @@ public class ServiceGestionDechet {
     }
 
 
-    // ✅ Déposer un déchet dans une poubelle (depuis la corbeille ou direct)
     public static void deposerDechetDansPoubelle(Dechet dechet, Poubelle poubelle, Menage menage, double quantiteSouhaitee) {
         boolean typeCorrect = verifierTypeDeDechet(dechet.getTypeDechet(), poubelle.getTypePoubelle());
 
@@ -251,7 +240,6 @@ public class ServiceGestionDechet {
         System.out.println("Quantité déposée : " + poidsAjoute + " kg. Capacité restante de la poubelle : " + (capaciteRestante - poidsAjoute) + " kg.");
     }
 
-    // ✅ Consulter l'historique des dépôts
     public static void consulterHistoriqueDepots() {
         Connection connexion = ConnexionBaseDeDonnees.obtenirConnexion();
         if (connexion != null) {

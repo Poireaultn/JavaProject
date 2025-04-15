@@ -4,14 +4,12 @@ public class Dechet {
     private double poids;
     private int idCorbeille;
 
-    // ✅ Constructeur sans ID (pour création d'un nouveau déchet)
     public Dechet(String typeDechet, double poids, int idCorbeille) {
         this.typeDechet = typeDechet;
         this.poids = poids;
         this.idCorbeille = idCorbeille;
     }
 
-    // ✅ Constructeur complet avec ID (utilisé lors de la lecture de la base)
     public Dechet(int identifiantDechet, String typeDechet, double poids, int idCorbeille) {
         this.identifiantDechet = identifiantDechet;
         this.typeDechet = typeDechet;

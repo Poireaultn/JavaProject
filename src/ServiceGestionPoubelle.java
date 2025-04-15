@@ -267,7 +267,7 @@ public class ServiceGestionPoubelle {
                 String requete = "INSERT INTO historique_vidages (idPoubelle, idCentre, idEmploye, poids_vidange, date_vidange) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)";
                 PreparedStatement statement = connexion.prepareStatement(requete);
                 statement.setInt(1, idPoubelle);
-                statement.setInt(2, idCentre); // ✅ Correction ici : idCentre au lieu de idCentreTri
+                statement.setInt(2, idCentre); 
                 statement.setInt(3, idEmploye);
                 statement.setDouble(4, poidsVide);
                 statement.executeUpdate();

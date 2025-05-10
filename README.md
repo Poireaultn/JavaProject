@@ -99,7 +99,7 @@ private static final String MOT_DE_PASSE = "votre_mot_de_passe";
 Dans Eclipse :
 
 ```menu
-MainApp.java > clic droit > Run As > Java Application
+MainApp.java > clic droit > Run As > Java Application > MainApp - IHM
 ```
 
 Assurez-vous d’avoir bien configuré JavaFX et JDBC.

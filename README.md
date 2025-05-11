@@ -104,6 +104,14 @@ MainApp.java > clic droit > Run As > Java Application > MainApp - IHM
 
 Assurez-vous d’avoir bien configuré JavaFX et JDBC.
 
+Comptes disponibles :
+- Employé :
+  - login : user1
+  - mdp : pass1
+- Utilisateur :
+  - login : user2
+  - mdp : pass2
+
 ---
 
 ## ✅ Fonctionnalités disponibles

@@ -121,6 +121,7 @@ Comptes disponibles :
 - 🗑️ Dépôt dans les poubelles compatibles
 - ♻️ Ajout de déchets et vidage des corbeilles
 - 📊 Visualisation des statistiques globales
+- 📊 Possibilité d'importer des fichiers CSV pour visualiser les stats
 - 🏆 Attribution de points de fidélité
 - 🎫 Achat de bons d'achat avec les points
 - 📤 Export et 📥 import de la base au format CSV
